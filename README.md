@@ -6,9 +6,13 @@ This application allows users to add, update, delete, and manage contacts effici
 
 Features
 ✔ Add New Contacts – Enter name, phone number, and email.
+
 ✔ Update Existing Contacts – Modify contact details in a separate update window.
+
 ✔ Delete Contacts – Remove contacts dynamically.
+
 ✔ Persistent Storage – Uses SQLite database to store contacts permanently.
+
 ✔ Interactive UI – Built with Tkinter’s Treeview for structured contact display.
 
 Technologies Used 🛠️
