@@ -22,7 +22,7 @@ def create_table():
 def refresh_contacts():
     for item in tree.get_children():
         tree.delete(item)
-    
+
     for widget in button_frame.winfo_children():
         widget.destroy()
 
@@ -145,9 +145,9 @@ def add_contact():
 
 def create_action_buttons(index, slno, name, phone, email):
     row_frame = Frame(button_frame)
-    row_frame.grid(row=index, column=0, sticky="w", pady=0) 
+    row_frame.grid(row=index, column=0, sticky="w", pady=2)  
 
-    delete_btn = Button(row_frame, text="Delete", command=lambda: delete_contact(slno), width=5,fg="red")
+    delete_btn = Button(row_frame, text="Delete", command=lambda: delete_contact(slno), width=6, fg="red")
     delete_btn.pack(side=LEFT, padx=5)
 
     update_btn = Button(row_frame, text="Update", command=lambda: update_contact(slno, name, phone, email), width=7)
@@ -155,7 +155,7 @@ def create_action_buttons(index, slno, name, phone, email):
 
 root = tk.Tk()
 root.title("Contact Manager")
-root.geometry("800x500")  
+root.geometry("800x500")
 root.minsize(800, 400)
 
 Label(root, text="Contact Manager", font=("Arial", 16)).grid(row=0, column=0, columnspan=2, pady=10)
@@ -167,7 +167,7 @@ table_frame = Frame(main_frame)
 table_frame.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
 button_frame = Frame(main_frame)
-button_frame.grid(row=0, column=2, sticky="ns", padx=10, pady=25)  
+button_frame.grid(row=0, column=2, sticky="ns", padx=10, pady=30)  
 
 columns = ("SLNO", "NAME", "PHONENUMBER", "EMAIL")
 tree = ttk.Treeview(table_frame, columns=columns, show="headings")
@@ -184,11 +184,11 @@ tree.column("EMAIL", width=200, anchor=W)
 
 tree.pack(expand=True, fill=BOTH)
 
-refresh_contacts()
-
 Button(root, text="Add Contact", command=add_contact).grid(row=2, column=0, columnspan=2, pady=10)
 
 root.grid_rowconfigure(1, weight=1)
 root.grid_columnconfigure(0, weight=1)
 
+create_table()
+refresh_contacts()
 root.mainloop()
