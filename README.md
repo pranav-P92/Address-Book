@@ -1,10 +1,9 @@
-Contact Management System (Address Book) 
-
+**Contact Management System (Address Book)**
 
 A simple Contact Management System built using Python (Tkinter) for the GUI and SQLite for the database. 
-This application allows users to add, update, delete, and manage contacts efficiently while ensuring a smooth and user-friendly experience.
+This application allows users to store, organize and retrive contacts efficiently while ensuring a smooth and user-friendly experience. It widely used in both personal and professional settings to maintain communication records efficiently.
 
-Features
+**Features**
 
 ✔ Add New Contacts – Enter name, phone number, and email.
 
@@ -16,7 +15,7 @@ Features
 
 ✔ Interactive UI – Built with Tkinter’s Treeview for structured contact display.
 
-Technologies Used 🛠️
+**Technologies Used** 🛠️
 
 Python – Core language for the application
 
