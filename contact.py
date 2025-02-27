@@ -7,7 +7,6 @@ from tkinter import messagebox
 def connect_db():
     return sq.connect('app.db')
 
-# Create database and contacts table
 def create_table():
     con = connect_db()
     c = con.cursor()
@@ -20,7 +19,6 @@ def create_table():
     con.commit()
     con.close()
 
-# Function to refresh the contacts table
 def refresh_contacts():
     for item in tree.get_children():
         tree.delete(item)
