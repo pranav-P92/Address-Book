@@ -1,7 +1,7 @@
 **Contact Management System (Address Book)**
 
 A simple Contact Management System built using Python (Tkinter) for the GUI and SQLite for the database. 
-This application allows users to store, organize and retrive contacts efficiently while ensuring a smooth and user-friendly experience. It widely used in both personal and professional settings to maintain communication records efficiently.
+This application allows users to store, organize and retrive contacts efficiently.
 
 **Features**
 
